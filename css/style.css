@@ -119,7 +119,7 @@ input {
   max-width: 830px;
 }
 .content__background {
-  background-image: url("/img/main/background.png");
+  background-image: url("../img/main/background.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 70%;
@@ -155,7 +155,7 @@ input {
   display: inline;
   font-size: calc(36px + 2.3762376238vw);
   line-height: 120.8333333333%;
-  background-image: url("/img/main/underline.png");
+  background-image: url("../img/main/underline.png");
   z-index: 0;
   position: relative;
   background-repeat: no-repeat;
@@ -187,11 +187,11 @@ input {
   }
 }
 .content__title__underline--blue {
-  background-image: url("/img/main/underline-blue.png");
+  background-image: url("../img/main/underline-blue.png");
   z-index: 0;
 }
 .content__title__underline--yellow {
-  background-image: url("/img/main/underline.png");
+  background-image: url("../img/main/underline.png");
   z-index: 0;
 }
 .content__title__first {
@@ -222,7 +222,7 @@ input {
 }
 .content__btn::after {
   content: "";
-  background-image: url("/img/main/Icon.png");
+  background-image: url("../img/main/Icon.png");
   background-repeat: no-repeat;
   position: relative;
   display: inline-block;
@@ -366,7 +366,7 @@ input {
   position: relative;
   top: 7px;
   right: -10px;
-  background-image: url("/img/header/arrow.svg");
+  background-image: url("../img/header/arrow.svg");
 }
 .nav__item:hover {
   opacity: 0.5;
@@ -607,7 +607,7 @@ input {
   background-color: transparent;
 }
 .price--list__item:hover .price--list__advantages--list__item::before {
-  background-image: url("/img/main/icon--price/check-mark02.png");
+  background-image: url("../img/main/icon--price/check-mark02.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -661,7 +661,7 @@ input {
   top: 0;
   left: 0;
   content: "";
-  background-image: url("/img/main/icon--price/check-mark01.png");
+  background-image: url("../img/main/icon--price/check-mark01.png");
   width: 21px;
   height: 21px;
 }
@@ -898,7 +898,7 @@ input {
   .testimonial__item__card--desc::after {
     content: "";
     display: block;
-    background-image: url("/img/main/testimonial/btn-starr.png");
+    background-image: url("../img/main/testimonial/btn-starr.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 150px;
@@ -1144,7 +1144,7 @@ input {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("/img/footer/lang.svg");
+  background-image: url("../img/footer/lang.svg");
   width: 19px;
   height: 20px;
   left: 0;
@@ -1154,7 +1154,7 @@ input {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("/img/footer/arrow.svg");
+  background-image: url("../img/footer/arrow.svg");
   width: 20px;
   height: 14px;
   top: 0;
