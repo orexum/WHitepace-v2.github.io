@@ -250,6 +250,12 @@ input {
   color: #212529;
 }
 
+.bg__background {
+  background-image: url("../img/main/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 70%;
+}
 .bg__blue {
   background-color: #043873;
   padding: 140px 0;
@@ -419,6 +425,10 @@ input {
 }
 .head--title__padding {
   padding: 140px 0;
+  background-image: url("../img/main/bg__background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 70%;
 }
 @media (max-width: 1180px) {
   .head--title__padding {
