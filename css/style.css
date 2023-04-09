@@ -256,6 +256,10 @@ input {
   background-size: contain;
   background-position: 0 70%;
 }
+.bg__background--white {
+  background-image: url("../img/main/bg__background--white.png");
+  background-repeat: no-repeat;
+}
 .bg__blue {
   background-color: #043873;
   padding: 140px 0;

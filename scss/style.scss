@@ -180,11 +180,15 @@
   }
 }
 .bg {
-  &__background{
+  &__background {
     background-image: url("../img/main/background.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 70%;
+    &--white {
+      background-image: url("../img/main/bg__background--white.png");
+      background-repeat: no-repeat;
+    }
   }
   &__blue {
     background-color: #043873;
