@@ -6,6 +6,9 @@ const container = document.querySelectorAll(".testimonial__item");
 const containerOriginals = document.querySelectorAll(
   ".testimonial__item__card"
 );
+const user = document.querySelector(".user");
+const userContainer = document.querySelector(".nav__list");
+const userContainerOriginals = document.querySelector(".wrapper-menu");
 
 window.addEventListener("resize", function (event) {
   const vieportWidth = Math.max(
@@ -40,8 +43,25 @@ window.addEventListener("resize", function (event) {
       }
     }
   }
+  ///////////////////////////////////
+  if (vieportWidth <= 768) {
+    if (!user.classList.contains("done")) {
+      userContainer.insertBefore(user, userContainer.children[4]);
+      user.classList.add("done");
+    }
+  } else {
+    if (user.classList.contains("done")) {
+      userContainerOriginals.insertBefore(
+        user,
+        userContainerOriginals.children[0]
+      );
+      user.classList.remove("done");
+    }
+  }
+  /////////////////////////////////////////
 });
 // СМЕНА БОЛКА ПРИ АДАПТИВЕ
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -70,21 +90,19 @@ let onBurgerMenu = false;
 const burgerMenu = document.querySelector(".menu");
 const burgerMenuList = document.querySelector(".nav__list");
 
-const clickBurgerMenu = () =>{
-  burgerMenu.addEventListener("click",() =>{
-    if(onBurgerMenu){
+const clickBurgerMenu = () => {
+  burgerMenu.addEventListener("click", () => {
+    if (onBurgerMenu) {
       onBurgerMenu = false;
       burgerMenuList.classList.remove("nav__list__active");
-      return
+      return;
     }
     onBurgerMenu = true;
     burgerMenuList.classList.add("nav__list__active");
-    return
-
-  })
-}
+    return;
+  });
+};
 const hideHeader = () => {
-
   const header = document.querySelector(".glav--header");
   const fixedHeaderClassName = "glav--header__fixed";
   const hiddenHeaderClassName = "glav--header__hidden";
@@ -112,8 +130,8 @@ const hideHeader = () => {
     initialYvalue = scrollY;
 
     function hide() {
-      if(onBurgerMenu) {
-        return
+      if (onBurgerMenu) {
+        return;
       }
       if (!isItHidden) {
         header.classList.add(hiddenHeaderClassName);
@@ -137,7 +155,7 @@ const hideHeader = () => {
       header.classList.remove(fixedHeaderClassName);
       document.body.style.paddingTop = 0 + "px";
     }
-  }); 
+  });
 };
 clickBurgerMenu();
 hideHeader();

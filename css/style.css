@@ -120,7 +120,7 @@ input {
     max-width: 728px;
   }
   .container .user {
-    display: none;
+    display: block;
   }
   .container .sponsors__title {
     font-size: 36px;
