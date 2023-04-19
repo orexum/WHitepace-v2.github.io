@@ -1002,7 +1002,7 @@
   width: 100%;
   position: absolute;
   height: 10%;
-  transition: all 0.3 ease 0s;
+  transition: all 0.3s ease 0s;
   background-color: #fff;
 }
 .menu::after,
@@ -1018,6 +1018,17 @@
 .menu span{
   top: 50%;
   transform: scale(1) translate(0,-50%);
+}
+.menu.active span{
+  transform: scale(0) translate(0,-50%);
+}
+.menu.active::before{
+  bottom: 50%;
+  transform: rotate(-45deg) translate(0,50%);
+}
+.menu.active::after{
+  top: 50%;
+  transform: rotate(45deg) translate(0,-50%);
 }
 .wrapper-menu{
   display: flex;

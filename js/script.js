@@ -94,10 +94,12 @@ const clickBurgerMenu = () => {
   burgerMenu.addEventListener("click", () => {
     if (onBurgerMenu) {
       onBurgerMenu = false;
+      burgerMenu.classList.remove("active")
       burgerMenuList.classList.remove("nav__list__active");
       return;
     }
     onBurgerMenu = true;
+    burgerMenu.classList.add("active")
     burgerMenuList.classList.add("nav__list__active");
     return;
   });
