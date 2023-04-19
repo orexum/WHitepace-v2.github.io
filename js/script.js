@@ -72,6 +72,8 @@ for (let anchor of anchors) {
   anchor.addEventListener("click", function (event) {
     event.preventDefault();
     onBurgerMenu = false;
+    burgerMenu.classList.remove("active")
+    documenetBody.classList.remove("_lock")
     burgerMenuList.classList.remove("nav__list__active");
     const blockId = anchor.getAttribute("href");
     document.querySelector("" + blockId).scrollIntoView({
@@ -89,17 +91,20 @@ for (let anchor of anchors) {
 let onBurgerMenu = false;
 const burgerMenu = document.querySelector(".menu");
 const burgerMenuList = document.querySelector(".nav__list");
+const documenetBody = document.querySelector("body");
 
 const clickBurgerMenu = () => {
   burgerMenu.addEventListener("click", () => {
     if (onBurgerMenu) {
       onBurgerMenu = false;
-      burgerMenu.classList.remove("active")
+      burgerMenu.classList.remove("active");
+      documenetBody.classList.remove("_lock")
       burgerMenuList.classList.remove("nav__list__active");
       return;
     }
     onBurgerMenu = true;
     burgerMenu.classList.add("active")
+    documenetBody.classList.add("_lock")
     burgerMenuList.classList.add("nav__list__active");
     return;
   });
